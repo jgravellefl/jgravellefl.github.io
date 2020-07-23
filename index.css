@@ -1,0 +1,358 @@
+/* General Things*/
+* {
+    box-sizing: border-box;
+  }
+:target::before {
+    content: "";
+    display: block;
+    height: 50px; /* fixed header height*/
+    margin: -50px 0 0; /* negative fixed header height */
+}
+html{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+body{
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+.anchor{
+    padding-top:60px
+}
+
+/*main image and text in front of it*/
+
+.container{
+    margin: 0 auto;
+    background: bgd(0,0,0,0.0);
+    font-size: 24px;
+    padding: 0;
+    width: 100%;
+    padding-top: 0;
+    z-index:2;
+    position:relative;
+}
+.parallax{
+    height: 100vh;
+    background: transparent;
+    min-width:100%;
+    top: 0;
+    left: 0;
+    border: 0;
+    margin:0;
+    overflow: hidden;
+}
+  .box-img{
+    border-radius: 50%;
+    width: 250 px;
+    height:250px
+}
+.box{
+    /*width: 450px;*/
+    background: rgba(0,0,0, 0);
+    text-align: center;
+    margin-top: 13%;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+    z-index: 2;
+    position: relative;
+}
+.myName{
+    color:white;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 120px;
+}
+
+/* Stuff for the body of the website*/
+
+.section-header{
+    display: block;
+    text-align: center;
+    font-family: 'Tisa';
+    margin:5px;
+    z-index: 1;
+    overflow: hidden;
+}
+.logo{ 
+    display:block;
+    float: left; 
+    width: 36%; 
+    margin:0 2%;
+    text-align:right; 
+    height: 23%;
+    min-height: 150px;
+    z-index: 1;
+}
+.largeLogo{ 
+    display:block;
+    float: left; 
+    width: 36%; 
+    margin:0 2%;
+    text-align:right; 
+    height: 23%;
+    min-height: 200px;
+    z-index: 1;
+    min-width: 400px;
+}
+.smallLogo{ 
+    display:block;
+    float: left; 
+    width: 36%; 
+    margin:0 2%;
+    text-align:right; 
+    min-height: 140px;
+    z-index: 1;
+    min-width: 400px;
+    overflow: hidden;
+}
+.smallText{
+    display: block;
+    float: left;
+    margin: 0 2%;
+    width: 56%;
+    text-align: left;
+    overflow: hidden;
+    min-height: 140px;
+    z-index: 1;
+    min-width: 500px;
+    overflow: hidden;
+}
+.largeText{
+    display: block;
+    float: left;
+    margin: 0 2%;
+    width: 56%;
+    text-align: left;
+    height: 23%;
+    overflow: hidden;
+    min-height: 200px;
+    z-index: 1;
+    min-width: 500px;
+}
+.largestText{
+    display: block;
+    float: left;
+    margin: 0 2%;
+    width: 56%;
+    text-align: left;
+    height: 23%;
+    overflow: hidden;
+    min-height: 210px;
+    z-index: 1;
+    min-width: 500px;
+}
+.logoImage{
+    text-align: center;
+    margin-top: 2.5vh;
+    height: 100px;
+    border-radius: 5%;
+}
+.skillsCol1{ 
+    float: left; 
+    width: 46%; 
+    margin:0 2%;
+    text-align:right; 
+    height: 25%;
+}
+.skillsCol2{
+    float: right;
+    margin: 0 2%;
+    width: 46%;
+    text-align: left;
+    height: 25%;
+}
+.aboutMePhoto{
+    border: 4%;
+    float: left;
+    margin: 0 2%;
+    width: 46%;
+    text-align: center;
+    height: 60%;
+    min-height:450px ;
+}
+.aboutMeImage{
+    border-radius: 5%;
+    margin-top: 4%;
+    width:60%;
+    text-align: center;
+    min-width: 500px;
+}
+.aboutMeText{
+    float: left; 
+    width: 46%;
+    margin:0 2%;
+    text-align:center; 
+    height: 60%;
+    overflow: hidden;
+    min-height: 450px;
+    min-width: 500px;
+}
+.theAboutMeText{
+    margin-top: 5%;
+    font-size: 20px;
+    font-style: 'Century Gothic', sans-serif;
+    margin-left: 10%;
+    line-height: 1.8;
+}
+
+.aboutMeBox{
+    display: block;
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+.technicalExperienceBox{
+    display: block;
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+.projectBox{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 1;
+    overflow: hidden;
+    background-color: gainsboro;
+}
+.educationBox{
+    display: block;
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+.skillsBox{
+    display: block;
+    height: 30%;
+    min-height: 260px;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    background-color: ghostwhite;
+}
+
+.skillsList{
+    font-size: 15px;
+    line-height: 2;
+    font-style: 'Century Gothic', sans-serif;
+
+}
+.link{
+    outline: none;
+    text-decoration: none;
+    /*padding: 2px 1px 0;*/
+    color: #437A16;
+  }
+  .contactInfo{
+    text-align: center;
+    font-size: 15px;
+    line-height: 2;
+    font-style: 'Century Gothic', sans-serif;
+  }
+  .contactSection{
+    display: block;
+    min-height: 200px;
+    width: 100%;
+    background-color: gainsboro;
+    z-index: 1;
+    overflow: hidden;
+}
+.contactCol1{ 
+    float: left; 
+    width: 48%; 
+    margin:0 1%;
+    text-align:right; 
+    height: 25%;
+}
+.contactCol2{
+    float: right;
+    margin: 0 1%;
+    width: 48%;
+    text-align: left;
+    height: 25%;
+}
+.linkedInImage{
+    height: 20px;
+}
+/* navigation window at the top of the screen*/
+
+.navBar{
+    width:100vw;
+    margin:0 auto;
+}
+header{
+    background-color: rgba(0, 0, 0, 0);
+}
+header::after{
+    content:'';
+    display:table;
+    clear: both;
+}
+.name .blog{
+    float:left;
+    padding:10px;
+}
+.leftList{
+    float:left;
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    width: 30vw;
+    min-width: 300px;
+}
+.rightList{
+    float:right;
+    text-align: right;
+    margin:0;
+    padding: 0;
+    list-style: none;
+    width: 70vw;
+    min-width: 1000px;
+}
+nav li{
+    display: inline-block;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 10px;
+    position: relative;
+}
+nav{
+    position:fixed;
+    z-index: 100;
+    background-color: rgb(179, 179, 179);
+    width:100%
+}
+nav a{
+    color:#444;
+    text-decoration: none;
+}
+nav a:hover{
+    color:#000;
+}
+ul{
+    min-width: 1200px;
+}
+nav a::before{
+    content:'';
+    display:block;
+    height:5px;
+    width:100%;
+    background-color: #444;
+
+    position:absolute;
+    top:0;
+    width : 0%;
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before{
+    width:100%;
+}
