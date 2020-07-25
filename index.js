@@ -15,3 +15,8 @@ function myFunction() {
       }
     }
   }
+
+  function scroll(anchorName){
+    var element_to_scroll_to = document.getElementById(anchorName);
+    element_to_scroll_to.scrollIntoView();
+  }
