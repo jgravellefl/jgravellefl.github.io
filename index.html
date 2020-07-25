@@ -6,11 +6,12 @@
         <link rel = "stylesheet" href="index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="./parallax.js-1.5.0/parallax.js"></script>
+        <script src = "./index.js"></script>
     </head>
     <body>
         <header>
-            <div class="navBar">
-                <nav>
+            <nav>
+                <div class="navBar">
                     <ul class = "leftList"></ul>
                         <li><a href = "#" class = "name">Joe Gravelle</a></li>
                         <li><a href = "#" class = "blog">Blog</a></li>
@@ -24,8 +25,20 @@
                         <li><a href = "#contact">Contact</a></li>
                         <li><a href =  "./ResumeJoeGravelle.pdf" target = "_blank">Resume</a></li>
                     </ul>
-                </nav>
-            </div>
+                </div>
+                <div class="dropDown">
+                    <button class = "dropDownButton" onclick="myFunction()">Menu</button>
+                    <div class="dropDownList" id = "myDropdown">
+                        <a href =  "#aboutMeHeader">About Me</a>
+                        <a href =  "#experienceJump">Experience</a>
+                        <a href =  "#projects">Projects</a>
+                        <a href =  "#education">Education</a>
+                        <a href = "#skills">Skills</a>
+                        <a href = "#contact">Contact</a>
+                        <a href =  "./ResumeJoeGravelle.pdf" target = "_blank">Resume</a>
+                    </div>
+                </div>
+            </nav>
         </header>
         <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="./images/wallImage5.jpg">
             
