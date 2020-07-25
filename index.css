@@ -86,6 +86,7 @@ body{
     min-height: 200px;
     z-index: 1;
     min-width: 255px;
+    background-color: red;
 }
 .smallLogo{ 
     display:block;
@@ -97,6 +98,7 @@ body{
     z-index: 1;
     min-width: 255px;
     overflow: hidden;
+    background:red;
 }
 .smallText{
     display: block;
@@ -109,6 +111,7 @@ body{
     z-index: 1;
     min-width: 280px;
     overflow: hidden;
+    background-color: blue;
 }
 .largeText{
     display: block;
@@ -121,6 +124,7 @@ body{
     min-height: 200px;
     z-index: 1;
     min-width: 280px;
+    background-color:blue;
 }
 .largestText{
     display: block;
