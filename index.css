@@ -382,6 +382,7 @@ nav a:hover::before{
   .show {display:block;}
 
   .dropDownButton {
+    -webkit-appearance: none;
     background-color:#313639 ;
     color: white;
     padding: 14px;
